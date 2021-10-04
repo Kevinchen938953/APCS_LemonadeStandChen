@@ -1,93 +1,129 @@
 		import java.util.Scanner;
 public class Lemonade
 {
-	public static void main(String[]args)
-	{
 	
+	
+		int cupsSugar=9;
+		int cupsIce=9;
+		int numPitchers=0;
+		int lemons = 9;
+		int day;
+		int cupsMade;
 		
-		//Methods selllemons makeLemons dailyBatch?
+		
+		public void amountofdays(){
 		Scanner getdays = new Scanner(System.in);
-		System.out.print("How many days? 7, 14, or 21?");
-		int day = getdays.nextInt(); 
+		System.out.print("select seven fourteen or twenty one days");
+		day = getdays.nextInt(); 
 		while (day!=7 && day!=14 && day!= 21)
 		{
 			System.out.println("Select again: ");
 			day = getdays.nextInt(); 
 			
 		}
-		System.out.print("You chose this" + " " + day);
+	}
 		
-	
-    
-    public void buystuff(String ingredients, String item)
-    {
-		
-		System.out.print("What do you want to buy or do you want to exit?");
-		Scanner buythis = new Scanner(System.in);
-		Scanner amount = new Scanner(System.in);
-		String ingredients = buythis.nextline();
-		
-		while((!ingredients.equals("Exit") || !ingredients.equals("exit")) && money>=0 )
+		public void addstuff(int moreLemons, int moreSugar, int moreIce)
 		{
-			System.out.print("Do you want to buy Lemon, Sugar, Ice, or Cups?");
-			Scanner chooseitem = new Scanner(System.in);
-			String item = Scanner.nextLine();
-			if(item.equals("Lemon"))  
-			{
-				System.out.println("How many lemons 10, 30, or 75?"); 
-				int lemonpiece = amount.nextInt() 
-				numLemons += lemonpiece;
-				money -= lemonPrice* lemonpiece;
-				
+			cupsSugar += moreSugar;
+			cupsIce += moreIce;
+			lemons += moreLemons;
 			
-		    }
-		    else if(item.equals("Ice"))
-		    {
-				System.out.println("How many cups of Ice do you want to buy?");
-				int icepiece = amount.nextInt();
-				numIce += icepiece;
-				money -=icepiece*icePrice;
-			}
-			else if(item.equals("Sugar"))
-			{
-				System.out.println("How many cups of sugar do you want to buy?");
-				int sugarpiece = amount.nextInt();
-				numSugar += sugarpiece;
-				money -=sugarpiece*sugarPrice;
-		    }	
-	    }
-	
-	//public void makeLemonade(int nL, int cS, int cI)
-	//{
-		//if(numLemons>=3 && cupsSugar>=3 && cupsIce>=3)
+		}
+		public void makeLemonadeCustom(int nL, int nS, int nI)
+        {
+         if(cupsSugar>=nS && cupsIce>=nI && lemons>=nL)
+          {
+            numPitchers++;
+            cupsMade+=10;
+            lemons-=nL;
+            cupsSugar-=nS;
+            cupsIce-=nI;
+            System.out.print(numPitchers);
+           }
+         }
+         
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //public void buystuff()
+   // {
+		
 		//{
-			//numPitchers++;
-			//cupsMade+=10;
-			//n//umLemons-=3;
-			//cupsSugar-=3;
-			//cupsIce-=3;
-			//System.out.println("Made Lemonade");
-		//	
+		//	System.out.print("What do you want to buy or do you want to exit?");
+		   // Scanner buythis = new Scanner(System.in);
+		   // Scanner amount = new Scanner(System.in);
+		    
+		  //  String ingredients = buythis.nextline();
+	//	}
+	//	else
+	//	{
+			
 	//	}
 		
-	//}
-	
-	
-	//public void makeLemonade(int nL, int cS, int cI)
-	//{
-		//if(numLemons>=nL && cupsSugar>=cS && cupsIce>=cI)
+	//	while(!ingredients.equals("Exit") || !ingredients.equals("exit") )
 	//	{
-		//	numPitchers++;
-		//	cupsMade+=3;
-			//numLemons-=nL;
-		//	cupsSugar-=cS;
-		//	cupsIce-=cI;
-		//	System.out.println("Made Lemonade");
+	//		System.out.print("Do you want to buy Lemon, Sugar, Ice, or Cups?");
+	//		Scanner chooseitem = new Scanner(System.in);
+	//		String item = Scanner.nextLine();
+		//	if(item.equals("Lemon")) { System.out.println("How many lemons 10, 30, or 75?"); int pieces = amount.nextInt(); lemons += pieces; cash -= pieces*lemonprice; }
 			
-		//}
-		
+	//	}
+			
 	//}
 	
+	
+		//}
+	//}
+	//public void weather()
+	//{
+	//	int temp = (int)math.random()*100; 
+	//}
+
+
+    
+
+
+//}
+//Twyford example:
+//public makeLemonade() if(numLemons>=3 && cupSugar>=3 && cupsIce>=3)numPitchers++ numLemons-=3 cupsSugar-=3 cupsIce-=3
+
+
+
+
+
+
+
 	
 	
 	
